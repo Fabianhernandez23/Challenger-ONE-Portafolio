@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Icono-->
+     <link rel="shortcut icon" href="./assets/formulario-de-contacto (1).png" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+    :root{
+        /* Inserta la variable de los otros colores inspeccionando el exemplo de figma 
+        --cor-de-fundo: #F5F5F5;
+       --cor-de-link: #000;*/
+        /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+       --cor-de-fundo: #fbf6f6;
+       --cor-de-font: rgb(12, 53, 149); 
+    }
+    
+    body {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: var(--cor-de-fundo) ;
+        color: var(--cor-de-font); 
+        font-family: 'Raleway';
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+    }
+    
+    /*Contacto*/
+    
+    .formcontato__contacto{
+        display: flex;
+        width: 105%;
+        position: relative; 
+        margin-top: 8vh;
+        align-items: start;
+        justify-content: center;
+        height: 85vh;
+        background-color: #fff;
+        border-radius: 35px;
+        box-shadow: 0 0 0 0.1rem rgba(204, 204, 204, 0.6);
+    }
+    
+    .formcontato__form{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 1.5em;
+    }
+    
+    .formcontato__title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 33px;
+        overflow-wrap: break-word;
+    }
+    
+    .formcontato__subtext{
+        font-weight: lighter;
+        text-align: center;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 1.1rem;
+        white-space: wrap;
+        overflow-wrap: break-word;
+        color:#464646;
+    }
+    
+    .formcontato__input{
+        padding: 15px;
+        width: 80%;
+        border: none;
+        border-radius: 5px; 
+        box-shadow: 0px 1px 0px 0px #ccc;
+        font-weight: lighter;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    .formcontato__input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        border-radius: 5px;
+      }
+    
+    .formcontato__textarea{
+        padding: 15px;
+        width: 80%;
+        border: none;
+        border-radius: 5px; 
+        box-shadow: 0px 1px 0px 0px #ccc;
+        font-weight: lighter;
+        font-size: 18px;
+        outline: none;
+        resize: none;
+    }
+    
+    .formcontato__textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        border-radius: 5px;
+      }
+    
+    .formcontato__botao {
+        margin-top: 15px;
+        font-size: 16px;
+        padding: 13.5px 30px;
+        border: none;
+        border-radius: 100px;
+        background-color: blue;
+        color: #ffffff;
+        font-weight: Bold;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        cursor: pointer;
+        font-weight: lighter;
+      }
+      
+      .formcontato__botao:hover {
+        background-color: #526ea5;
+        box-shadow: 0 0 20px #6fc5ff50;
+        transform: scale(1.1);
+      }
+      
+      .formcontato__botao:active {
+        background-color: #3d94cf;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        box-shadow: none;
+        transform: scale(0.98);
+      }
+    </style>
+</head>
+<body>
+    <div class="aside__container">
+        <section class="formcontato" id="contacto">
+            <div  class="formcontato__contacto">
+                <div class="formcontato--esquerda">
+                   <!-- <img class="formcontato__img" src="assets\contact_image.png">-->
+                </div>
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Contacto</h2>
+                    <!--<h3 class="formcontato__subtext">¿Quieres contactarme?</h3>-->
+                    <h3 class="formcontato__subtext">Comuniquese conmigo en el siguiente formulario.</h3>
+                    <form class="formcontato__form" name="form">
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
+                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
+                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
+                        <textarea class="formcontato__textarea" rows="5" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+      </div>
+</body>
+</html>
