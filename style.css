@@ -736,7 +736,7 @@ section.hobbies{
 
 /*Formación Académica*/
 section.academic{
-    height: 135vh;
+    height: auto;
     margin-right: 1.5vw;
 }
 
@@ -750,12 +750,13 @@ section.academic{
     display: flex;
     flex-wrap: wrap;
     gap: 4vh;
+    margin-bottom: 15vh;
 }
 
 /*Experiencia Profesional*/
 section.experience{
     margin-right: 1.5vw;
-    height: 260vh;
+    height: auto;
 }
 
 .experience__section__title{
@@ -765,21 +766,25 @@ section.experience{
 .experience__box{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10vh;
 }
 
 .experience__box_one{
     display: flex;
     flex-wrap: wrap; 
+    margin-bottom: 10vh;
 }
 
 .experiencie__box{
     display: flex;
     flex-wrap: wrap; 
+    margin-bottom: 10vh;
 }
 
 .experiencie__box_one{
     display: flex;
     flex-wrap: wrap; 
+    margin-bottom: 10vh;
 }
 
 .experience__img{
@@ -890,7 +895,7 @@ section.hobbies{
 
 /*Formación Académica*/
 section.academic{
-    height: 100vh;
+    height: auto;
     margin-right: 1.5vw;
 }
 
@@ -902,11 +907,12 @@ section.academic{
     display: flex;
     flex-wrap: wrap;
     gap: 5vh;
+    margin-bottom: 15vh;
 }
 
 /*Experiencia Profesional*/
 section.experience{
-    height: 330vh;
+    height: auto;
     margin-right: 1.5vw;
 }
 
